@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio Formulario</title>
+        <link rel="stylesheet" type="text/css" href="recursos/estilos.css">
+        <script type="text/javascript" src="recursos/funciones.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form name="form1" action="/ManejoFormuliariosHTML/Servlet" method="post" onsubmit="return validarForma(this);">
+            <input type="hidden" name="oculto" value="valorOculto">
+            <table width="200" id="one-column-emphasis">
+                <caption>
+                    Formulario Registro de Datos
+                </caption>
+                <tr>
+                    <td class="oce-first">
+                        Usuario:(*)
+                    </td>
+                    <td>
+                        <input class="default" type="text"
+                               name="usuario" value="Escribir usuario"
+                               onfocus="this.select();"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Password(*)
+                    </td>
+                    <td>
+                        <input class="default" type="password" 
+                               name="password" onfocus="this.select();">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Tecnolog&iaute;as de Inter&eacute;s: (*)
+                    </td>
+                    <td>
+                        Java <input type="checkbox" name="tecnologia" value="java">
+                        &nbsp;&nbsp;&nbsp;
+                        .Net <input type="checkbox" name="tecnologia" value="java">
+                        &nbsp;&nbsp;&nbsp;
+                        Php <input type="checkbox" name="tecnologia" value="java">
+                        &nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        G&iaute;nero : (*)
+                    </td>
+                    <td>
+                        Hombre <input type="radio" name="genero" value="H">
+                        &nbsp;&nbsp;&nbsp;
+                        Mujer <input type="radio" name="genero" value="M">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Ocupacio&iaute;n : (*)
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
